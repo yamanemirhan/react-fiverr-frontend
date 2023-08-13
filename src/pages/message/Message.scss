@@ -1,0 +1,88 @@
+.message {
+  display: flex;
+  justify-content: center;
+
+  .container {
+    width: 1200px;
+    margin: 50px;
+
+    .breadcrumbs {
+      font-size: 13px;
+      font-weight: 300;
+      color: #555;
+    }
+
+    .messages {
+      display: flex;
+      flex-direction: column;
+      height: 500px;
+      gap: 20px;
+      padding: 50px;
+      margin: 30px 0;
+      overflow-y: scroll;
+
+      .item {
+        display: flex;
+        max-width: 600px;
+        gap: 20px;
+        font-size: 18px;
+
+        &.owner {
+          flex-direction: row-reverse;
+          align-self: flex-end;
+
+          p {
+            border-radius: 20px 0 20px 20px;
+            background-color: royalblue;
+            color: white;
+          }
+        }
+
+        img {
+          width: 40px;
+          height: 40px;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+
+        p {
+          padding: 20px;
+          background-color: rgb(233, 231, 231);
+          border-radius: 0 20px 20px 20px;
+          color: gray;
+          font-weight: 300;
+        }
+      }
+    }
+
+    hr {
+      border: 0.5px solid rgb(228, 228, 228);
+      margin-bottom: 20px;
+    }
+
+    .write {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      textarea {
+        width: 80%;
+        height: 100px;
+        padding: 10px;
+        border: 1px solid lightgray;
+        border-radius: 10px;
+      }
+
+      button {
+        width: 100px;
+        background-color: #1dbf73;
+        color: white;
+        padding: 20px;
+        font-weight: 500;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+}
